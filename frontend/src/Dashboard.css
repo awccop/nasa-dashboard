@@ -1,0 +1,59 @@
+/* frontend/src/Dashboard.css */
+.dashboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    min-height: 80vh;
+  }
+  
+  .card {
+    background-color: #0f3460;
+    border-radius: 8px;
+    padding: 2rem;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    text-align: left;
+    color: #eaeaea;
+  }
+  
+  .title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #e94560;
+  }
+  
+  .apod-image, .apod-video {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+  }
+  
+  .date {
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .explanation {
+    line-height: 1.6;
+  }
+  
+  /* Loader styling */
+  .loader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #e94560;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+    margin: 3rem auto;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
