@@ -1,6 +1,7 @@
 // frontend/src/App.js
 import React from 'react';
 import Dashboard from './Dashboard';
+import ErrorBoundary from './ErrorBoundary';
 import './App.css';
 
 function App() {
@@ -10,7 +11,9 @@ function App() {
         <h1>NASA Dashboard</h1>
       </header>
       <main>
-        <Dashboard />
+        <ErrorBoundary>
+          <Dashboard />
+        </ErrorBoundary>
       </main>
     </div>
   );

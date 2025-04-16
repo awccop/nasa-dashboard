@@ -57,3 +57,11 @@
     100% { transform: rotate(360deg); }
   }
   
+  /* Error boundary styling */
+  .error-boundary {
+    padding: 2rem;
+    color: #ff6b6b;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  

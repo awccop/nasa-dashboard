@@ -21,8 +21,13 @@ function Dashboard() {
   }, []);
 
   if (loading) {
-    return <div className="dashboard"><div className="loader"></div></div>;
+    return (
+      <div className="dashboard">
+        <div className="loader"></div>
+      </div>
+    );
   }
+  
   if (error) {
     return <div className="dashboard error">Error: {error}</div>;
   }
