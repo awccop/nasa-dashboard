@@ -6,15 +6,19 @@ if (!API_BASE_URL) {
 }
 
 export async function fetchAPOD() {
-  try {
-    const response = await fetch(`${API_BASE_URL}/api/nasa/apod`);
-    if (!response.ok) {
-      throw new Error('Network response was not ok');
-    }
-    const data = await response.json();
-    return data;
-  } catch (error) {
-    console.error('Fetch APOD failed:', error);
-    throw error;
-  }
+  const response = await fetch(`${API_BASE_URL}/api/nasa/apod`);
+  if (!response.ok) throw new Error('Failed to fetch APOD.');
+  return await response.json();
+}
+
+export async function fetchAsteroids() {
+  const response = await fetch(`${API_BASE_URL}/api/asteroids`);
+  if (!response.ok) throw new Error('Failed to fetch asteroid data.');
+  return await response.json();
+}
+
+export async function fetchMarsWeather() {
+  const response = await fetch(`${API_BASE_URL}/api/mars-weather`);
+  if (!response.ok) throw new Error('Failed to fetch Mars weather.');
+  return await response.json();
 }

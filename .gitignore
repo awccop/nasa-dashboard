@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Environment variables (sensitive info)
+.env
+
+# Node modules for React
+node_modules/
+
+# React build output
+build/
+

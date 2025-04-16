@@ -1,3 +1,6 @@
-Flask==2.0.3
-Flask-Cors==3.0.10
-requests==2.26.0
+Flask
+requests
+python-dotenv
+flask-cors
+rich
+flasgger
