@@ -4,3 +4,4 @@ python-dotenv
 flask-cors
 rich
 flasgger
+gunicorn
