@@ -6,8 +6,8 @@ import os
 app = Flask(__name__)
 CORS(app)
 
-# Register NASA API routes under /api prefix
-app.register_blueprint(nasa_bp, url_prefix="/api")
+# Attach the NASA routes (with full path already inside blueprint)
+app.register_blueprint(nasa_bp)
 
 @app.route('/')
 def index():

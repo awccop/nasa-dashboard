@@ -1,7 +1,7 @@
 from flask import Blueprint, jsonify
 from nasa_service import get_apod
 
-nasa_bp = Blueprint("nasa", __name__)
+nasa_bp = Blueprint("nasa", __name__, url_prefix="/api/nasa")
 
 @nasa_bp.route("/apod", methods=["GET"])
 def apod():
