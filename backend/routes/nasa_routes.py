@@ -10,4 +10,3 @@ def apod():
         return jsonify(data)
     else:
         return jsonify({"error": "Failed to fetch data from NASA API."}), 502
-
