@@ -1,10 +1,6 @@
 from flask import Flask
 from flask_cors import CORS
 from routes.nasa_routes import nasa_bp
-
-
-
-
 import os
 
 app = Flask(__name__)

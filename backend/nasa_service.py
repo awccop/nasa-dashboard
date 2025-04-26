@@ -1,10 +1,8 @@
-// backend/nasa_service.py
 import os
 import requests
 
 NASA_API_KEY = os.getenv("NASA_API_KEY")
 NASA_APOD_URL = "https://api.nasa.gov/planetary/apod"
-
 
 def get_apod():
     params = {"api_key": NASA_API_KEY}
