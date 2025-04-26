@@ -1,4 +1,3 @@
-// backend/routes/nasa_routes.py
 from flask import Blueprint, jsonify
 from nasa_service import get_apod
 
@@ -11,3 +10,4 @@ def apod():
         return jsonify(data)
     else:
         return jsonify({"error": "Failed to fetch data from NASA API."}), 502
+
